@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Blog Post 1 - Arunprakash Manikandan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        h1, h2 {
+            text-transform: uppercase;
+        }
+        ul {
+            list-style-type: none;
+        }
+        strong {
+            display: block;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Generative AI with Large Language Models - Part 1</h1>
+    </header>
+
+    <section>
+        <p>Large language models (LLMs) are a powerful new technology that can be used to build a wide variety of applications. We will see how LLMs work, as well as the best practices behind training, tuning, and deploying them.</p>
+
+        <p>"Attention is all you need", a research paper was published in 2017 by Google and the University of Toronto. They introduced transformer architecture. Transformer architecture is a neural network architecture that is used to train large language models. <a href="https://arxiv.org/abs/1706.03762">Read the paper here</a>.</p>
+
+        <p>It is based on the idea of attention, which allows the model to learn the relationships between different parts of a sentence.</p>
+
+        <p>Transformer consists of two parts:</p>
+        <ul>
+            <li>Encoder</li>
+            <li>Decoder</li>
+        </ul>
+
+        <p>The strength of the transformer architecture comes from its self-attention mechanism, which allows it to understand relationships between all words in a sentence, not just neighboring ones. Self-attention helps the model learn the importance and context of each word in relation to all other words in the input, enhancing language understanding. In this, each word is mapped using an attention map to all words in the sentence and weight is calculated.</p>
+
+        <p>Before inputting the words, we need to tokenize them. Tokenization allows words to be processed as numbers, and an embedding layer converts these numbers into high-dimensional vectors to capture meaning and context. There are different ways to tokenize: either tokenize a whole word or split the words and tokenize them. Self-attention layers analyze relationships between tokens, with multi-headed self-attention enabling the model to learn various aspects of language.</p>
+
+        <p>The output of the transformer architecture is a vector of logits proportional to the probability score for each and every token in the tokenizer dictionary.</p>
+
+        <p>There are multiple models in Transformer:</p>
+        <ul>
+            <li>Encoder only -> Used for classification tasks (Sentiment analysis). Example: BERT model</li>
+            <li>Decoder only -> Used for generalizing tasks. Example: GPT family</li>
+            <li>Encoder and Decoder -> Used for sequence to sequence tasks. Example: T5 model</li>
+        </ul>
+
+        <p>Have fun with LLM & Transformer Architecture. See you soon!</p>
+    </section>
+
+</body>
+</html>
