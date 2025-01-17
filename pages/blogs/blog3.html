@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Blog Post 3 - Arunprakash Manikandan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        h1, h2 {
+            text-transform: uppercase;
+        }
+        ul {
+            list-style-type: none;
+        }
+        strong {
+            display: block;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Journey with the Dell Precision T-1700 Server - Arunprakash Manikandan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        h1, h2 {
+            text-transform: uppercase;
+        }
+        ul {
+            list-style-type: none;
+        }
+        strong {
+            display: block;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>My Journey with the Dell Precision T-1700 Server</h1>
+    </header>
+
+    <section>
+        <h2>Introduction</h2>
+        <p>Setting up a personal server is both a challenge and a rewarding experience. In this blog series, I’ll share my journey of building a versatile home server using a Dell Precision T-1700, from troubleshooting hardware issues to deploying a fully functional media server accessible over the Internet. This first post focuses on how I acquired the server, dealt with unexpected hardware challenges, and laid the groundwork for an efficient and reliable system.</p>
+    </section>
+
+    <section>
+        <h2>Acquiring the Dell Precision T-1700</h2>
+        <p>When I decided to set up a home server, I wanted something reliable yet cost-effective. After researching, I settled on the Dell Precision T-1700, a workstation known for its durability and performance. I managed to find one at a good price, excited to put it to work as the foundation of my server setup.</p>
+    </section>
+
+    <section>
+        <h2>Facing the DMS-59 Pin Challenge</h2>
+        <p>The Dell T-1700 came equipped with an older GPU that used a DMS-59 connector. This uncommon interface proved to be a problem, as I didn’t have the appropriate adapter to connect it to a modern monitor. At first, I thought replacing the adapter would solve the issue, but it became clear that the GPU itself was outdated and caused compatibility issues with the motherboard.</p>
+    </section>
+
+    <section>
+        <h2>The Solution: Swapping the GPU</h2>
+        <p>After some trial and error, I decided to replace the GPU entirely. I selected a dedicated GPU that was compatible with the system and would provide the performance I needed for virtualization and media streaming. With the new GPU installed, the display issue was resolved, and I was ready to proceed.</p>
+    </section>
+
+    <section>
+        <h2>Lessons Learned: Compatibility Matters</h2>
+        <p>One key lesson from this experience is that even if you have an older GPU lying around, it might not be compatible with your motherboard or intended use case. It's always worth checking compatibility thoroughly before starting a project like this.</p>
+        <p>Switching to a dedicated GPU not only solved my immediate problem but also opened up new possibilities for my server setup.</p>
+    </section>
+
+    <section>
+        <h2>Configuring the Proxmox Server</h2>
+        <p>With the hardware ready, the next step was setting up Proxmox, a powerful open-source platform for virtualization. Here’s a quick overview of the setup:</p>
+        <ul>
+            <li><strong>Installing Proxmox:</strong> I downloaded the Proxmox ISO and installed it on the Dell T-1700. The installation was straightforward, and the system was up and running in no time.</li>
+            <li><strong>Creating Virtual Machines (VMs):</strong> Proxmox allowed me to create multiple VMs for different purposes, such as running applications or testing new tools.</li>
+            <li><strong>Setting Up LXC Containers:</strong> Lightweight LXC containers were perfect for hosting services that didn’t require full virtualization, saving resources while maintaining flexibility.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Adding Jellyfin and Samba for Media and Storage</h2>
+        <p>To make the server functional for everyday use, I added two essential services:</p>
+        <ul>
+            <li><strong>Jellyfin Media Server:</strong> Jellyfin is an open-source media server that lets me organize and stream my media library. Setting it up was as simple as installing the software, adding my media files, and configuring user access.</li>
+            <li><strong>Samba for Shared Storage:</strong> Samba enabled me to share files across my network seamlessly. I created shared folders accessible from all my devices, making it easy to manage and back up data.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Enabling Remote Access with Tailscale</h2>
+        <p>One of my primary goals was to access the server remotely, even when outside my home network. This is where Tailscale came in.</p>
+        <ul>
+            <li><strong>Why Tailscale?</strong> Tailscale is a mesh VPN that allows secure access to your devices without complex configurations. With Tailscale, I could connect to my server from anywhere in the world.</li>
+            <li><strong>Access Without a VPN:</strong> While Tailscale worked perfectly for most devices, some devices (like Smart TVs) couldn't use VPNs. To address this, I configured Jellyfin to face the Internet, allowing me to access my media server directly, bypassing the need for a VPN.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Conclusion</h2>
+        <p>Setting up the Dell Precision T-1700 as a home server was a learning experience filled with challenges and rewards. From overcoming hardware compatibility issues to configuring Proxmox, Jellyfin, Samba, and Tailscale, each step brought me closer to my goal of a versatile, accessible, and efficient home server.</p>
+        <p>This is just the beginning. In upcoming posts, I’ll dive deeper into configuring Proxmox, optimizing media streaming, and exploring advanced automation techniques. Stay tuned!</p>
+    </section>
+
+</body>
+</html>
