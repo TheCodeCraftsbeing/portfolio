@@ -1,46 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Contact - Arunprakash Manikandan</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            line-height: 1.6;
-        }
-        header {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-        section {
-            margin-bottom: 40px;
-        }
-        h1, h2 {
-            text-transform: uppercase;
-        }
-        ul {
-            list-style-type: none;
-        }
-        strong {
-            display: block;
-            margin-top: 10px;
-        }
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact - Arunprakash</title>
+  <link rel="stylesheet" href="../assets/styles.css">
 </head>
 <body>
-
-    <header>
-        <h1>Contact</h1>
+  <div id="page" class="page-fade">
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="profile">
+          <img src="../assets/profile.svg" alt="Arunprakash profile" class="profile-photo" />
+        </div>
+        <div class="title">
+          <h1>Contact</h1>
+          <p class="subtitle">Get in touch</p>
+        </div>
+      </div>
     </header>
 
-    <section>
-        <p>Email: <a href="mailto:arunprakashmanikandan@gmail.com">arunprakashmanikandan@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/arunprakashmanikandan/">linkedin.com/in/arunprakashmanikandan</a></p>
-        <p>GitHub: <a href="https://github.com/TheCodeCraftsbeing">github.com/TheCodeCraftsbeing</a></p>
-    </section>
+    <nav class="site-nav" aria-label="Main navigation">
+      <div class="container nav-inner">
+        <ul>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="work_experience.html">Work Experience</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="blogs.html">Blogs</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="certificates.html">Certificates</a></li>
+          <li><a href="education.html">Education</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
 
+    <main class="container">
+      <section class="hero-card">
+        <h2>Contact</h2>
+        <p>Share your email, social links, or a contact form here.</p>
+      </section>
+
+      <section class="quick-links">
+        <article>
+          <h3>Email</h3>
+          <p>yourname@example.com</p>
+        </article>
+        <article>
+          <h3>Social</h3>
+          <p>Links to LinkedIn, GitHub, Twitter, etc.</p>
+        </article>
+        <article>
+          <h3>Location</h3>
+          <p>City, Country (optional)</p>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <strong>Arunprakash</strong></p>
+      </div>
+    </footer>
+  </div>
+  <script>window.addEventListener('DOMContentLoaded',function(){requestAnimationFrame(function(){document.getElementById('page').classList.add('is-loaded');});});</script>
 </body>
 </html>
