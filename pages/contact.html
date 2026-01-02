@@ -11,7 +11,7 @@
     <header class="site-header">
       <div class="container header-inner">
         <div class="profile">
-          <img src="../assets/profile.svg" alt="Arunprakash profile" class="profile-photo" />
+          <img src="../assets/profile.jpg" alt="Arunprakash profile" class="profile-photo" />
         </div>
         <div class="title">
           <h1>Contact</h1>
@@ -36,24 +36,32 @@
     </nav>
 
     <main class="container">
-      <section class="hero-card">
+      <!-- <section class="hero-card">
         <h2>Contact</h2>
         <p>Share your email, social links, or a contact form here.</p>
-      </section>
+      </section> -->
 
       <section class="quick-links">
-        <article>
+        <article class="card clickable">
+		<a href="mailto:arunprakashmanikandan@gmail.com">
           <h3>Email</h3>
-          <p>yourname@example.com</p>
+          <p>arunprakashmanikandan@gmail.com</p></a>
         </article>
-        <article>
-          <h3>Social</h3>
-          <p>Links to LinkedIn, GitHub, Twitter, etc.</p>
-        </article>
-        <article>
-          <h3>Location</h3>
-          <p>City, Country (optional)</p>
-        </article>
+        <article class="card">
+  <h3>Social</h3>
+  <p class="link-row">
+    <a class="pill-link" href="https://www.linkedin.com/in/arunprakashmanikandan" target="_blank">LinkedIn</a>
+    <a class="pill-link" href="https://github.com/TheCodeCraftsbeing" target="_blank">GitHub</a>
+  </p>
+</article>
+
+<article class="card clickable">
+  <a class="card-link" href="../assets/Arunprakash.pdf" target="_blank" rel="noopener noreferrer">
+    <h3>Resume</h3>
+    <p>View resume (PDF)</p>
+  </a>
+</article>
+
       </section>
     </main>
 
