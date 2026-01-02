@@ -1,64 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Blog Post 2 - Arunprakash Manikandan</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            line-height: 1.6;
-        }
-        header {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-        section {
-            margin-bottom: 40px;
-        }
-        h1, h2 {
-            text-transform: uppercase;
-        }
-        ul {
-            list-style-type: none;
-        }
-        strong {
-            display: block;
-            margin-top: 10px;
-        }
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Azure Open AI - Part 1</title>
+  <link rel="stylesheet" href="../../assets/styles.css">
 </head>
 <body>
-
-    <header>
-        <h1>Azure Open AI - Part 1</h1>
+  <div id="page" class="page-fade">
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="profile">
+          <img src="../../assets/profile.jpg" alt="Arunprakash profile" class="profile-photo" />
+        </div>
+        <div class="title">
+          <h1>Arunprakash</h1>
+          <p class="subtitle">Software Engineer | AI &amp; Cloud Enthusiast | Full-Stack Developer</p>
+        </div>
+      </div>
     </header>
 
-    <section>
-        <h2>What is Azure Open AI?</h2>
+    <main class="container">
+      <section class="hero-card">
+        <h2>Azure Open AI - Part 1</h2>
         <p>Azure Open AI is a collaboration between OpenAI and Microsoft Azure, providing faster and more reliable access to AI models while meeting enterprise standards.</p>
+      </section>
 
-        <h2>How it works?</h2>
-        <p>After getting access, you can use multiple OpenAI models in the portal, including GPT-3.5-turbo, DALL-E, and more. They have a separate portal for this service (<a href="https://oai.azure.com/portal/">https://oai.azure.com/portal/</a>). Access is granted upon approval of your request.</p>
-        <p>Azure Open AI offers multiple templates for common use cases like customer support bots and string format assistants. The advantage of Azure Open AI is the ability to deploy AI models in minutes for common use cases.</p>
-        <p>For custom use cases, there is an option called fine-tuning. As the name suggests, you can tune an AI model for your specific needs. I am currently exploring how to fine-tune these models.</p>
+      <section class="content-card">
+        <section>
+                <h2>What is Azure Open AI?</h2>
+                <p>Azure Open AI is a collaboration between OpenAI and Microsoft Azure, providing faster and more reliable access to AI models while meeting enterprise standards.</p>
+        
+                <h2>How it works?</h2>
+                <p>After getting access, you can use multiple OpenAI models in the portal, including GPT-3.5-turbo, DALL-E, and more. They have a separate portal for this service (<a href="https://oai.azure.com/portal/" target="_blank" rel="noopener noreferrer">https://oai.azure.com/portal/</a>). Access is granted upon approval of your request.</p>
+                <p>Azure Open AI offers multiple templates for common use cases like customer support bots and string format assistants. The advantage of Azure Open AI is the ability to deploy AI models in minutes for common use cases.</p>
+                <p>For custom use cases, there is an option called fine-tuning. As the name suggests, you can tune an AI model for your specific needs. I am currently exploring how to fine-tune these models.</p>
+        
+                <h2>How do they make money from this service?</h2>
+                <p>Azure Open AI charges based on token consumption. The words you use to interact with the AI are broken into tokens for processing. For detailed pricing, refer to the Microsoft official link (<a href="https://azure.microsoft.com/en-us/pricing/details/cognitive-services/openai-service/" target="_blank" rel="noopener noreferrer">https://azure.microsoft.com/en-us/pricing/details/cognitive-services/openai-service/</a>).</p>
+        
+                <h2>Accessing Azure Open AI</h2>
+                <p>To access Azure Open AI, you need to request access through the Azure portal. Once approved, you can start using the models and templates provided. The portal offers a user-friendly interface to manage and deploy AI models efficiently.</p>
+        
+                <h2>References</h2>
+                <ul>
+                    <li><a href="https://oai.azure.com/portal/" target="_blank" rel="noopener noreferrer">Azure Open AI Portal</a></li>
+                    <li><a href="https://azure.microsoft.com/en-us/pricing/details/cognitive-services/openai-service/" target="_blank" rel="noopener noreferrer">Azure Open AI Pricing</a></li>
+                </ul>
+        
+                <p>Have fun with AI. See you soon!</p>
+            </section>
 
-        <h2>How do they make money from this service?</h2>
-        <p>Azure Open AI charges based on token consumption. The words you use to interact with the AI are broken into tokens for processing. For detailed pricing, refer to the Microsoft official link (<a href="https://azure.microsoft.com/en-us/pricing/details/cognitive-services/openai-service/">https://azure.microsoft.com/en-us/pricing/details/cognitive-services/openai-service/</a>).</p>
+      </section>
+    </main>
 
-        <h2>Accessing Azure Open AI</h2>
-        <p>To access Azure Open AI, you need to request access through the Azure portal. Once approved, you can start using the models and templates provided. The portal offers a user-friendly interface to manage and deploy AI models efficiently.</p>
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <strong>Arunprakash</strong></p>
+      </div>
+    </footer>
+  </div>
 
-        <h2>References</h2>
-        <ul>
-            <li><a href="https://oai.azure.com/portal/">Azure Open AI Portal</a></li>
-            <li><a href="https://azure.microsoft.com/en-us/pricing/details/cognitive-services/openai-service/">Azure Open AI Pricing</a></li>
-        </ul>
-
-        <p>Have fun with AI. See you soon!</p>
-    </section>
-
+  <script>
+    window.addEventListener('DOMContentLoaded', function () {
+      requestAnimationFrame(function () {
+        document.getElementById('page').classList.add('is-loaded');
+      });
+    });
+  </script>
 </body>
 </html>
