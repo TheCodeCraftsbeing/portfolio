@@ -1,74 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Projects - Arunprakash Manikandan</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            line-height: 1.6;
-        }
-        header {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-        section {
-            margin-bottom: 40px;
-        }
-        h1, h2 {
-            text-transform: uppercase;
-        }
-        ul {
-            list-style-type: none;
-        }
-        strong {
-            display: block;
-            margin-top: 10px;
-        }
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Projects - Arunprakash</title>
+  <link rel="stylesheet" href="../assets/styles.css">
 </head>
 <body>
-
-    <header>
-        <h1>Projects</h1>
+  <div id="page" class="page-fade">
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="profile">
+          <img src="../assets/profile.jpg" alt="Arunprakash profile" class="profile-photo" />
+        </div>
+        <div class="title">
+          <h1>Projects</h1>
+          <p class="subtitle">Selected work and case studies</p>
+        </div>
+      </div>
     </header>
 
-    <section>
+    <nav class="site-nav" aria-label="Main navigation">
+      <div class="container nav-inner">
         <ul>
-            <li><strong>Hackathon Project – Agentic AI System for Smart Incident Management</strong><br>
-                 - Recognized as the winner of a 2025 innovation hackathon for developing an Agentic AI system that automates incident detection, analysis, and resolution in IT managed services. <br>
-                 - The solution leverages AI-driven automation, context understanding, and dynamic decision-making agents to enhance operational efficiency and reduce incident resolution time.
-             </li>
-            <li><strong>Automation AI (Offsite) | Jan 2024 to Present (Full Time)</strong> <br>
-                - Optimized Azure OpenAI to customize and work around data to automate manual processes.<br>
-                - Engaged with stakeholders to gather requirements and propose effective solutions, ensuring alignment with business goals.<br>
-                - Developed intelligent solutions for process automation, reducing manual intervention and increasing accuracy.<br>
-                - Suggested and implemented cost-effective AI solutions to replace existing manual processes, resulting in significant cost savings.<br>
-            </li>
-            <li><strong>Digital Security (Offsite) | Jul 2021 to Dec 2023 (Full Time)</strong> <br>
-                - Enhanced application efficiency by optimizing the search feature, successfully reducing user wait time by implementing Azure Cognitive Search (indexing).<br>
-                - Engaged with stakeholders to gather requirements and propose effective solutions, ensuring alignment with business goals.<br>
-                - Implemented CI/CD workflow practices for building data pipelines. Integrated Databricks for intricate transformations between knowledge base and client assets, facilitating analysis.<br>
-                - Orchestrated the ingestion of data from diverse sources, including APIs, Azure Storage, Databricks jobs, and Data Warehouse.<br>
-                - Developed a robust Azure Function App responsible for collecting data from the Service Bus.<br>
-                - Streamlined ETL processes through the design of Data Factory pipelines, identifying and investigating issues and bugs in data pipeline failures for performance improvement.<br>
-                - Suggested and implemented cost-cutting measures by optimizing resource usage and leveraging Azure's cost management tools.<br>
-            </li>
-            <li><strong>Data Catalog (Offsite) | Jul 2021 to Dec 2023 (Full Time)</strong> <br>
-                - Oversaw the seamless implementation of the Ingestion Service flow through SQL scripts, meticulously analyzing any encountered errors, and proactively addressing issues to ensure a robust and error-free data ingestion process.<br>
-                - Engaged with stakeholders to gather requirements and propose effective solutions, ensuring alignment with business goals.<br>
-                - Designed and developed feature enhancements in API development using Python.<br>
-                - Included email feature for existing Function App to keep users updated about the results of API requests.<br>
-                - Modified existing Function App to handle multiple API requests using Python.<br>
-                - Systematically conducted Data Processing pipelines, meticulously analyzing bottlenecks within the data workflow in Databricks.<br>
-                - Contributed to the application's reliability by introducing PyTest cases, fortifying its resilience and ensuring consistent performance.<br>
-                - Enforced Managed Identity across various resources, establishing secure and authenticated connections to the Azure Function App.<br>
-            </li>
+			<li><a href="../index.html">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="work_experience.html">Work Experience</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="blogs.html">Blogs</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="certificates.html">Certificates</a></li>
+          <li><a href="education.html">Education</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
-    </section>
+      </div>
+    </nav>
 
+    <main class="container">
+      <section class="hero-card">
+        <h2>Projects</h2>
+        <p>Below are selected projects that reflect my hands-on experience building, operating, and scaling AI-driven and cloud-native systems. Each project highlights real-world challenges, practical solutions, and measurable impact	.</p>
+      </section>
+
+      <section class="quick-links">
+        <article>
+          <h3>Hackathon Project – Agentic AI System for Smart Incident Management</h3>
+		  <h4>Nov 2025</h4>
+          <p>Built a winning Agentic AI system that autonomously detects, analyzes, and resolves IT incidents using context-aware decision-making agents.</p>
+<p>The solution significantly improved operational efficiency by reducing manual intervention and incident resolution time.</p>
+        </article>
+        <article>
+          <h3>Automation AI</h3>
+		  <h4>Jan 2024 – Present</h4>
+          <p>Designed and delivered AI-driven automation solutions using Azure OpenAI to replace manual business processes.</p><p>
+Focused on stakeholder-aligned solutions that improved accuracy, reduced operational effort, and delivered measurable cost savings.</p>
+        </article>
+        <article>
+          <h3>Digital Security</h3>
+		  <h4>Jul 2021 – Dec 2023</h4>
+          <p>Enhanced application performance and data reliability by optimizing search, CI/CD workflows, and large-scale data pipelines on Azure.</p><p>
+Led end-to-end ingestion and transformation workflows using Azure Cognitive Search, Databricks, Data Factory, and Functions.</p>
+        </article>
+		<article>
+          <h3>Data Catalog </h3>
+		  <h4>Jul 2021 – Dec 2023</h4>
+          <p>Built and optimized data ingestion and API services to ensure reliable, secure, and scalable data processing.
+Improved system resilience through pipeline optimization, automated testing, and secure identity-based access across Azure services.</p>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <strong>Arunprakash</strong></p>
+      </div>
+    </footer>
+  </div>
+  <script>window.addEventListener('DOMContentLoaded',function(){requestAnimationFrame(function(){document.getElementById('page').classList.add('is-loaded');});});</script>
 </body>
 </html>
