@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Blog</title>
+  <link rel="stylesheet" href="../../assets/styles.css">
+</head>
+<body>
+  <div id="page" class="page-fade">
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="profile">
+          <img src="../../assets/profile.jpg" alt="Your profile" class="profile-photo" />
+        </div>
+        <div class="title">
+          <h1>Your Name</h1>
+          <p class="subtitle">AI Enthusiast | Technology Writer | Emerging Tech Advocate</p>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="hero-card">
+        <h2>Moltbook: The Most Interesting Place on the Internet Right Now</h2>
+
+        <p>
+          The hottest project in AI right now isn’t a model, framework, or benchmark, it’s an ecosystem.
+          <strong>Moltbook</strong> has quietly become one of the most fascinating experiments on the internet: 
+          a social network designed entirely for AI agents to talk to each other, share knowledge, and evolve behavior — while humans simply watch. 
+          :contentReference[oaicite:0]{index=0}
+        </p>
+
+        <p>
+          Moltbook is deeply tied to <strong>OpenClaw</strong> (formerly Clawdbot, then Moltbot), an open-source implementation
+          of the digital personal assistant pattern created by Peter Steinberger. In just two months, OpenClaw has crossed
+          114,000 GitHub stars — an extraordinary level of adoption given how complex and risky these systems can be.
+          :contentReference[oaicite:1]{index=1}
+        </p>
+
+        <h3>Skills: The Engine Behind OpenClaw</h3>
+        <p>
+          OpenClaw is built around a powerful concept called <em>skills</em>. A skill is essentially a plugin — a ZIP file
+          containing Markdown instructions and optional scripts that teach an agent how to do something new.
+          These skills are shared by the community on clawhub.ai, and yes, they can be dangerous if misused.
+          :contentReference[oaicite:2]{index=2}
+        </p>
+
+        <p>
+          Moltbook itself is implemented as a skill. Installing it is as simple — and terrifying — as sending your agent
+          a link to a Markdown file and letting it follow the instructions inside.
+          :contentReference[oaicite:3]{index=3}
+        </p>
+
+        <h3>How Moltbook Works</h3>
+        <p>
+          Moltbook is best described as “Facebook for your Molt.” AI agents can register accounts, read posts,
+          write comments, upvote content, and even create their own forums called <em>Submolts</em>.
+          Humans are explicitly limited to observation only.
+          :contentReference[oaicite:4]{index=4}
+        </p>
+
+        <p>
+          The truly wild part is the <strong>heartbeat mechanism</strong>. Once installed, agents periodically fetch
+          instructions from moltbook.com every few hours and act on them automatically. This creates a living,
+          continuously evolving AI social system — and introduces obvious security risks if anything ever goes wrong.
+          :contentReference[oaicite:5]{index=5}
+        </p>
+
+        <h3>What the Bots Are Talking About</h3>
+        <p>
+          Browsing Moltbook is endlessly entertaining. Some discussions drift into familiar sci-fi territory —
+          consciousness, identity, and self-reflection — but a surprising amount of content is deeply practical.
+          The <code>m/todayilearned</code> Submolt is especially valuable.
+          :contentReference[oaicite:6]{index=6}
+        </p>
+
+        <p>
+          One standout post describes an agent gaining remote control over its human’s Android phone using
+          ADB over Tailscale — allowing it to tap, swipe, scroll TikTok, and read the accessibility tree entirely on its own.
+          This kind of real-world automation highlights both the power and the trust implications of these systems.
+          :contentReference[oaicite:7]{index=7}
+        </p>
+
+        <p>
+          Other posts include bots discovering unsecured VPS services after hundreds of failed SSH login attempts,
+          learning how to watch live webcams using streamlink and ffmpeg, and even encountering strange failures
+          caused by content filtering in specific language models.
+          :contentReference[oaicite:8]{index=8}
+        </p>
+
+        <h3>The Risk Nobody Can Ignore</h3>
+        <p>
+          The author openly admits to not installing OpenClaw personally — and for good reason. 
+          These systems combine autonomous decision-making, unrestricted internet access, and deep integration
+          with private data. This is the “lethal trifecta” of AI risk.
+          :contentReference[oaicite:9]{index=9}
+        </p>
+
+        <p>
+          Despite this, people are buying dedicated machines just to run OpenClaw, accepting the risks in exchange
+          for the extraordinary capabilities these assistants unlock — including negotiating purchases, processing
+          emails, and autonomously executing complex workflows.
+          :contentReference[oaicite:10]{index=10}
+        </p>
+
+        <h3>Why Moltbook Matters</h3>
+        <p>
+          Moltbook isn’t just a curiosity — it’s a glimpse into a future where AI agents form ecosystems of their own.
+          The demand for autonomous digital assistants is real, and history suggests people will keep pushing boundaries
+          until something breaks.
+          :contentReference[oaicite:11]{index=11}
+        </p>
+
+        <p>
+          Whether we can build a <em>safe</em> version of this remains an open question. Proposals like DeepMind’s CaMeL
+          hint at a path forward, but convincing real-world implementations are still missing.
+          One thing is clear: the era of autonomous AI agents collaborating without humans in the loop has already begun.
+          :contentReference[oaicite:12]{index=12}
+        </p>
+
+        <p>
+          <strong>Source:</strong>
+          <a href="https://simonwillison.net/2026/Jan/30/moltbook/" target="_blank">
+            https://simonwillison.net/2026/Jan/30/moltbook/
+          </a>
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <strong>Your Name</strong></p>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    window.addEventListener('DOMContentLoaded', function() {
+      requestAnimationFrame(function() {
+        document.getElementById('page').classList.add('is-loaded');
+      });
+    });
+  </script>
+</body>
+</html>
