@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Projects - Arunprakash</title>
   <link rel="stylesheet" href="../assets/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,500&family=Figtree:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <script src="../assets/theme.js"></script>
 </head>
 <body>
   <div id="page" class="page-fade">
@@ -15,7 +19,7 @@
         </div>
         <div class="title">
           <h1>Projects</h1>
-          <p class="subtitle">Selected work and case studies</p>
+          <p class="subtitle">senior genai engineer &middot; agentic ai &amp; rag &middot; azure cloud</p>
         </div>
       </div>
     </header>
@@ -23,7 +27,7 @@
     <nav class="site-nav" aria-label="Main navigation">
       <div class="container nav-inner">
         <ul>
-			<li><a href="../index.html">Home</a></li>
+          <li><a href="../index.html">Home</a></li>
           <li><a href="about.html">About Me</a></li>
           <li><a href="work_experience.html">Work Experience</a></li>
           <li><a href="projects.html">Projects</a></li>
@@ -38,44 +42,64 @@
 
     <main class="container">
       <section class="hero-card">
-        <h2>Projects</h2>
-        <p>Below are selected projects that reflect my hands-on experience building, operating, and scaling AI-driven and cloud-native systems. Each project highlights real-world challenges, practical solutions, and measurable impact	.</p>
+        <span class="eyebrow">selected work &middot; case studies</span>
+        <h2>Every project here answers one question: <em>what did the business get?</em></h2>
+        <p>Hours saved, incidents avoided, SLAs met, risk reduced. The technology &mdash; agents, RAG, MCP, vector search &mdash; is the how, not the why.</p>
       </section>
 
       <section class="quick-links">
-        <article>
-          <h3>Hackathon Project – Agentic AI System for Smart Incident Management</h3>
-		  <h4>Nov 2025</h4>
-          <p>Built a winning Agentic AI system that autonomously detects, analyzes, and resolves IT incidents using context-aware decision-making agents.</p>
-<p>The solution significantly improved operational efficiency by reducing manual intervention and incident resolution time.</p>
+        <article class="card-wide">
+          <h3>&#127942; Agentic AI System for Smart Incident Management</h3>
+          <h4>First place &middot; 2025 enterprise innovation hackathon</h4>
+          <p>An agentic AI system that autonomously detects, analyzes, and resolves IT incidents &mdash; multi-agent orchestration with LangGraph and CrewAI, context-aware reasoning, tool use via MCP integrations, and AI-assisted decisions with built-in guardrails and safety validation.</p>
+          <p class="value-line">value: less manual firefighting, faster resolution &mdash; judged first for business impact and execution quality</p>
         </article>
         <article>
-          <h3>Automation AI</h3>
-		  <h4>Jan 2024 – Present</h4>
-          <p>Designed and delivered AI-driven automation solutions using Azure OpenAI to replace manual business processes.</p><p>
-Focused on stakeholder-aligned solutions that improved accuracy, reduced operational effort, and delivered measurable cost savings.</p>
+          <h3>Knowledge Extraction &amp; Migration Tool</h3>
+          <h4>2024 &ndash; present</h4>
+          <p>SharePoint &rarr; Blob &rarr; Azure AI Search ingestion pipelines with document chunking, embeddings, and vector store indexing &mdash; turning scattered enterprise documents into a searchable, RAG-ready knowledge base.</p>
+          <p class="value-line">value: institutional knowledge people can actually find</p>
+        </article>
+        <article>
+          <h3>ServiceNow Ticket Assigner</h3>
+          <h4>2024 &ndash; present</h4>
+          <p>Automated ticket routing with Azure Functions and Python SDKs, sending incidents to the right resolver group without manual triage.</p>
+          <p class="value-line">value: better sla adherence, zero triage queues</p>
+        </article>
+        <article>
+          <h3>Ticket Sentiment Analysis</h3>
+          <h4>2024 &ndash; present</h4>
+          <p>NLP over ServiceNow work notes to detect early signs of customer dissatisfaction, feeding data-driven escalation decisions.</p>
+          <p class="value-line">value: unhappy customers surfaced before they escalate</p>
+        </article>
+        <article>
+          <h3>Certificate Automation Tools</h3>
+          <h4>2024 &ndash; present</h4>
+          <p>Automated certificate comparison, expiry alerts, and secret validation with robust Python codebases.</p>
+          <p class="value-line">value: a recurring cause of outages, removed</p>
         </article>
         <article>
           <h3>Digital Security</h3>
-		  <h4>Jul 2021 – Dec 2023</h4>
-          <p>Enhanced application performance and data reliability by optimizing search, CI/CD workflows, and large-scale data pipelines on Azure.</p><p>
-Led end-to-end ingestion and transformation workflows using Azure Cognitive Search, Databricks, Data Factory, and Functions.</p>
+          <h4>Jul 2021 &ndash; Dec 2023</h4>
+          <p>Optimized search, CI/CD workflows, and large-scale data pipelines on Azure; led end-to-end ingestion and transformation with Azure Cognitive Search, Databricks, Data Factory, and Functions.</p>
+          <p class="value-line">value: faster, more reliable data for security workloads</p>
         </article>
-		<article>
-          <h3>Data Catalog </h3>
-		  <h4>Jul 2021 – Dec 2023</h4>
-          <p>Built and optimized data ingestion and API services to ensure reliable, secure, and scalable data processing.
-Improved system resilience through pipeline optimization, automated testing, and secure identity-based access across Azure services.</p>
+        <article>
+          <h3>Data Catalog</h3>
+          <h4>Jul 2021 &ndash; Dec 2023</h4>
+          <p>Built and optimized data ingestion and API services with automated testing and identity-based access across Azure services.</p>
+          <p class="value-line">value: secure, resilient data processing at scale</p>
         </article>
       </section>
+
     </main>
 
     <footer class="site-footer">
       <div class="container">
-        <p>© <strong>Arunprakash</strong></p>
+        <p>&copy; <strong>Arunprakash</strong></p>
+        <p><a href="../assets/Arunprakash.pdf" target="_blank" rel="noopener noreferrer">Resume (PDF)</a> &middot; <a href="contact.html">Contact</a></p>
       </div>
     </footer>
   </div>
-  <script>window.addEventListener('DOMContentLoaded',function(){requestAnimationFrame(function(){document.getElementById('page').classList.add('is-loaded');});});</script>
 </body>
 </html>
