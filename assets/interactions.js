@@ -59,20 +59,55 @@
     Array.prototype.slice.call(h.childNodes).forEach(wrap);
   }
 
-  /* Mark the page you're on in the table-of-contents nav */
+  /* Mark where you are in the table-of-contents nav.
+     Anchor navs get a scroll-spy; page navs match the file name. */
   function activeNav() {
-    var here = location.pathname.split('/').pop() || 'index.html';
     var links = document.querySelectorAll('.nav-inner a');
+    if (!links.length) return;
+
+    var anchors = [];
     Array.prototype.forEach.call(links, function (a) {
-      var href = (a.getAttribute('href') || '').split('/').pop();
-      if (href === here) a.setAttribute('aria-current', 'page');
+      var href = a.getAttribute('href') || '';
+      var hashAt = href.indexOf('#');
+      if (hashAt > -1) {
+        var target = document.getElementById(href.slice(hashAt + 1));
+        if (target) anchors.push({ link: a, section: target });
+      } else if (href.split('/').pop() === (location.pathname.split('/').pop() || 'index.html')) {
+        a.setAttribute('aria-current', 'page');
+      }
     });
+    if (!anchors.length) return;
+
+    var ticking = false;
+    function spy() {
+      ticking = false;
+      var line = window.scrollY + 120;
+      var current = anchors[0];
+      anchors.forEach(function (item) {
+        if (item.section.offsetTop <= line) current = item;
+      });
+      // Near the very bottom, the last section wins even if it's short
+      if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 4) {
+        current = anchors[anchors.length - 1];
+      }
+      anchors.forEach(function (item) {
+        if (item === current) item.link.setAttribute('aria-current', 'page');
+        else item.link.removeAttribute('aria-current');
+      });
+    }
+    window.addEventListener('scroll', function () {
+      if (!ticking) { ticking = true; requestAnimationFrame(spy); }
+    }, { passive: true });
+    window.addEventListener('resize', spy);
+    spy();
   }
 
   /* Cards surface as they enter the viewport */
   function revealOnScroll() {
     if (reduce || !('IntersectionObserver' in window)) return;
-    var items = document.querySelectorAll('.quick-links article, .content-card');
+    var items = document.querySelectorAll(
+      '.quick-links article, .content-card, .timeline li, .project-index li, .writing-list li'
+    );
     if (!items.length) return;
     var io = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) {

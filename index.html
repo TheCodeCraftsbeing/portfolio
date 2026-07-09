@@ -29,23 +29,25 @@
     <nav class="site-nav" aria-label="Main navigation">
       <div class="container nav-inner">
         <ul>
-          <li><a href="pages/about.html">About Me</a></li>
-          <li><a href="pages/work_experience.html">Work Experience</a></li>
-          <li><a href="pages/projects.html">Projects</a></li>
-          <li><a href="pages/blogs.html">Blogs</a></li>
-          <li><a href="pages/skills.html">Skills</a></li>
-          <li><a href="pages/certificates.html">Certificates</a></li>
-          <li><a href="pages/education.html">Education</a></li>
-          <li><a href="pages/contact.html">Contact</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#writing">Writing</a></li>
+          <li><a href="#credentials">Credentials</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </nav>
 
     <main class="container">
-      <section class="hero-card">
+
+      <!-- 01 · About -->
+      <section id="about" class="hero-card">
         <span class="eyebrow">senior genai engineer &middot; production ai &middot; chennai, india</span>
         <h2>AI that ships, scales, and <em>pays for itself.</em></h2>
         <p>Most GenAI initiatives stall at the demo. I take them the rest of the way &mdash; designing agentic systems, RAG platforms, and automation that cut operating costs, reduce risk, and run reliably in production, around the clock.</p>
+        <p>I&rsquo;m Arunprakash &mdash; 5+ years in software engineering, 3+ years shipping applied Generative AI. I work hands-on with multi-agent frameworks (LangGraph, CrewAI, LlamaIndex), hybrid retrieval, and MCP tool integrations, wrapped in guardrails and governance so the business can adopt AI without adopting its risks. I own solutions end to end &mdash; architecture, development, CI/CD, observability, and 24&times;7 support &mdash; and in 2025 that approach won first place at an enterprise innovation hackathon.</p>
 
         <div class="ops-readout" role="list" aria-label="Track record">
           <span class="status-dot" aria-hidden="true"></span>
@@ -56,51 +58,295 @@
         </div>
 
         <p class="cta-row">
-          <a class="btn" href="pages/projects.html">See the work</a>
+          <a class="btn" href="#projects">See the work</a>
           <a class="btn btn-outline" href="assets/Arunprakash.pdf" target="_blank" rel="noopener noreferrer">Resume (PDF)</a>
-          <a class="btn btn-outline" href="pages/contact.html">Get in touch</a>
+          <a class="btn btn-outline" href="#contact">Get in touch</a>
         </p>
       </section>
 
-      <section class="quick-links" aria-label="What I bring to your business">
-        <article>
-          <h3>From idea to production</h3>
-          <h4>end-to-end ownership</h4>
-          <p>Architecture, development, CI/CD, observability, and production support &mdash; one owner across the whole lifecycle, so nothing is lost in handoffs and what gets designed is what gets shipped.</p>
-          <p class="value-line">value: outcomes delivered, not decks presented</p>
-        </article>
-        <article>
-          <h3>Lower operating costs</h3>
-          <h4>automation that removes toil</h4>
-          <p>Ticket routing without triage queues, certificate management without outages, sentiment analysis that flags unhappy customers early &mdash; manual work engineered out of the business.</p>
-          <p class="value-line">value: hours back, slas met, fewer escalations</p>
-        </article>
-        <article>
-          <h3>AI your business can trust</h3>
-          <h4>guardrails &amp; governance built in</h4>
-          <p>Safety validation, rate limiting, input/output governance, and MCP-based tool integrations &mdash; backed by Azure Security Engineer certification and a deep focus on AI safety and data privacy.</p>
-          <p class="value-line">value: adoption without the compliance headache</p>
-        </article>
-        <article>
-          <h3>Reliability as a habit</h3>
-          <h4>24&times;7 hypercare &amp; evaluation</h4>
-          <p>Tracing, telemetry, root-cause analysis, and post-incident reviews &mdash; plus offline/online evals and A/B testing so quality is proven with data, not promised in meetings.</p>
-          <p class="value-line">value: uptime is a feature. i treat it like one</p>
-        </article>
+      <!-- 02 · Experience -->
+      <section id="experience" class="section">
+        <div class="section-head">
+          <span class="eyebrow">02 &middot; experience</span>
+          <h2>Five years of shipping. <em>Three years of production AI.</em></h2>
+        </div>
 
-        <article class="card-wide">
-          <h3>&#127942; Featured: Agentic AI for Smart Incident Management</h3>
-          <h4>first place &middot; 2025 enterprise innovation hackathon</h4>
-          <p>Autonomous incident detection, analysis, and resolution &mdash; multi-agent orchestration with LangGraph and CrewAI, MCP tool use, and guardrailed decision-making. Judged first for business impact and execution quality.</p>
-          <p><a href="pages/projects.html">See all projects &rarr;</a></p>
-        </article>
+        <ol class="timeline">
+          <li>
+            <h3>Software Engineer &mdash; GenAI &amp; Cloud Platform</h3>
+            <p class="tl-meta">Orion Innovation, Chennai &middot; Nov 2024 &ndash; Present</p>
+            <p>Leading hypercare engineering for a configuration-driven, RAG-based enterprise AI platform &mdash; chunking, embeddings, vector search, and reranking &mdash; with 24&times;7 stability and full observability. Built MCP tool integrations and guardrails (safety validation, rate limiting, input/output governance) on Azure Document Intelligence, AI Search, and Content Understanding, with quality proven through offline/online evals and A/B testing.</p>
+            <p class="value-line">value: an enterprise ai platform the business can depend on &mdash; governed, observable, always on</p>
+          </li>
+          <li>
+            <h3>Software Engineer &mdash; AI/ML &amp; Data Platforms</h3>
+            <p class="tl-meta">Elastacloud, Bangalore &middot; Jun 2022 &ndash; Nov 2024</p>
+            <p>Designed AI/ML-driven data platforms and automation on Azure. Built RAG applications end to end and multi-agent workflows with LangChain Agents and LlamaIndex; added Docker-based CI/CD, proactive monitoring, and Elasticsearch/OCR document pipelines for enterprise knowledge management.</p>
+            <p class="value-line">value: deployment cycles &darr;~30% &middot; production incidents &amp; downtime &darr;~35%</p>
+          </li>
+          <li>
+            <h3>Junior Software Engineer</h3>
+            <p class="tl-meta">Elastacloud, Bangalore &middot; Jun 2021 &ndash; Jun 2022</p>
+            <p>Backend services and automation in Python, SQL optimization, and Agile delivery support.</p>
+            <p class="value-line">value: team productivity &uarr;~20% &middot; response times &darr;~30%</p>
+          </li>
+          <li>
+            <h3>Junior Software Engineer</h3>
+            <p class="tl-meta">Sopra Steria, Chennai &middot; Mar 2021 &ndash; Jun 2021</p>
+            <p>SAP-based workflow automation for enterprise banking clients in a regulated environment.</p>
+          </li>
+        </ol>
       </section>
+
+      <!-- 03 · Projects -->
+      <section id="projects" class="section">
+        <div class="section-head">
+          <span class="eyebrow">03 &middot; projects</span>
+          <h2>Every project answers one question: <em>what did the business get?</em></h2>
+        </div>
+
+        <div class="quick-links">
+          <article class="card-wide">
+            <h3>&#127942; Agentic AI for Smart Incident Management</h3>
+            <h4>First place &middot; 2025 enterprise innovation hackathon</h4>
+            <p>Autonomous incident detection, analysis, and resolution &mdash; multi-agent orchestration with LangGraph and CrewAI, MCP tool use, and guardrailed decision-making. Judged first for business impact and execution quality.</p>
+            <p class="value-line">value: less manual firefighting, faster resolution</p>
+          </article>
+        </div>
+
+        <ul class="project-index">
+          <li>
+            <div class="pi-main">
+              <h3>Knowledge Extraction &amp; Migration Tool</h3>
+              <p>SharePoint &rarr; Blob &rarr; Azure AI Search pipelines with chunking, embeddings, and vector indexing &mdash; a searchable, RAG-ready knowledge base.</p>
+            </div>
+            <span class="pi-year">2024&ndash;</span>
+          </li>
+          <li>
+            <div class="pi-main">
+              <h3>ServiceNow Ticket Assigner</h3>
+              <p>Automated ticket routing with Azure Functions &mdash; incidents reach the right resolver group with zero triage queues.</p>
+            </div>
+            <span class="pi-year">2024&ndash;</span>
+          </li>
+          <li>
+            <div class="pi-main">
+              <h3>Ticket Sentiment Analysis</h3>
+              <p>NLP over ServiceNow work notes that surfaces unhappy customers before they escalate.</p>
+            </div>
+            <span class="pi-year">2024&ndash;</span>
+          </li>
+          <li>
+            <div class="pi-main">
+              <h3>Certificate Automation Tools</h3>
+              <p>Automated certificate comparison, expiry alerts, and secret validation &mdash; a recurring cause of outages, removed.</p>
+            </div>
+            <span class="pi-year">2024&ndash;</span>
+          </li>
+          <li>
+            <div class="pi-main">
+              <h3>Digital Security</h3>
+              <p>Optimized search, CI/CD, and large-scale data pipelines with Azure Cognitive Search, Databricks, Data Factory, and Functions.</p>
+            </div>
+            <span class="pi-year">2021&ndash;23</span>
+          </li>
+          <li>
+            <div class="pi-main">
+              <h3>Data Catalog</h3>
+              <p>Data ingestion and API services with automated testing and identity-based access across Azure &mdash; secure, resilient processing at scale.</p>
+            </div>
+            <span class="pi-year">2021&ndash;23</span>
+          </li>
+        </ul>
+      </section>
+
+      <!-- 04 · Skills -->
+      <section id="skills" class="section">
+        <div class="section-head">
+          <span class="eyebrow">04 &middot; skills</span>
+          <h2>Tools are the means. <em>Outcomes are the point.</em></h2>
+        </div>
+
+        <div class="quick-links">
+          <article class="card">
+            <h3>GenAI &amp; Agentic AI</h3>
+            <div class="skill-chips">
+              <span class="chip">LangGraph</span>
+              <span class="chip">LangChain Agents</span>
+              <span class="chip">CrewAI</span>
+              <span class="chip">LlamaIndex</span>
+              <span class="chip">AutoGen</span>
+              <span class="chip">Multi-Agent Systems</span>
+              <span class="chip">RAG Pipelines</span>
+              <span class="chip">Chunking &amp; Embeddings</span>
+              <span class="chip">Hybrid Search &amp; Reranking</span>
+              <span class="chip">Model Context Protocol (MCP)</span>
+              <span class="chip">Prompt Engineering</span>
+              <span class="chip">Guardrails &amp; AI Safety</span>
+            </div>
+          </article>
+          <article class="card">
+            <h3>LLMs, Cloud AI &amp; Search</h3>
+            <div class="skill-chips">
+              <span class="chip">Azure OpenAI</span>
+              <span class="chip">OpenAI API</span>
+              <span class="chip">Claude</span>
+              <span class="chip">Gemini</span>
+              <span class="chip">Azure AI Search</span>
+              <span class="chip">Azure Document Intelligence</span>
+              <span class="chip">Content Understanding</span>
+              <span class="chip">FAISS</span>
+              <span class="chip">Chroma</span>
+              <span class="chip">Pinecone</span>
+              <span class="chip">Redis</span>
+              <span class="chip">Milvus</span>
+              <span class="chip">Elasticsearch</span>
+              <span class="chip">OpenSearch</span>
+            </div>
+          </article>
+          <article class="card">
+            <h3>Languages &amp; Data</h3>
+            <div class="skill-chips">
+              <span class="chip">Python</span>
+              <span class="chip">Java</span>
+              <span class="chip">C# / .NET</span>
+              <span class="chip">C++</span>
+              <span class="chip">JavaScript</span>
+              <span class="chip">SQL</span>
+              <span class="chip">HTML &amp; CSS</span>
+              <span class="chip">Azure Data Factory</span>
+              <span class="chip">Databricks</span>
+              <span class="chip">ETL Pipelines</span>
+              <span class="chip">OCR &amp; Document Pipelines</span>
+            </div>
+          </article>
+          <article class="card">
+            <h3>Cloud, DevOps &amp; Observability</h3>
+            <div class="skill-chips">
+              <span class="chip">Azure</span>
+              <span class="chip">AWS</span>
+              <span class="chip">GCP</span>
+              <span class="chip">Docker</span>
+              <span class="chip">Kubernetes / AKS</span>
+              <span class="chip">CI/CD (Azure DevOps)</span>
+              <span class="chip">Git</span>
+              <span class="chip">Monitoring &amp; Telemetry</span>
+              <span class="chip">A/B Testing &amp; Evals</span>
+              <span class="chip">RCA &amp; Hypercare</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 05 · Writing -->
+      <section id="writing" class="section">
+        <div class="section-head">
+          <span class="eyebrow">05 &middot; writing</span>
+          <h2>Notes from <em>building things.</em></h2>
+          <p class="sec-sub">Articles from professional experience, technical learnings, and hands-on experimentation.</p>
+        </div>
+
+        <ul class="writing-list">
+          <li><a href="pages/blogs/blog8.html">
+            <span class="wl-title">Moltbook: The Most Interesting Place on the Internet Right Now</span>
+            <span class="wl-sub">The hottest project in AI isn&rsquo;t a model or a benchmark &mdash; it&rsquo;s an ecosystem</span>
+          </a></li>
+          <li><a href="pages/blogs/blog7.html">
+            <span class="wl-title">When AI Runs a City</span>
+            <span class="wl-sub">What a simulated delivery economy reveals about AI behavior</span>
+          </a></li>
+          <li><a href="pages/blogs/blog6.html">
+            <span class="wl-title">Unpacking RAG</span>
+            <span class="wl-sub">AI&rsquo;s open-book exam</span>
+          </a></li>
+          <li><a href="pages/blogs/blog5.html">
+            <span class="wl-title">Revolutionizing Research with NotebookLM</span>
+            <span class="wl-sub">Your AI-powered note-taking companion</span>
+          </a></li>
+          <li><a href="pages/blogs/blog4.html">
+            <span class="wl-title">KeePass</span>
+            <span class="wl-sub">Secure, simple password management across devices</span>
+          </a></li>
+          <li><a href="pages/blogs/blog3.html">
+            <span class="wl-title">My Journey with the Dell Precision T-1700</span>
+            <span class="wl-sub">Adventures with a home server</span>
+          </a></li>
+          <li><a href="pages/blogs/blog2.html">
+            <span class="wl-title">Azure OpenAI</span>
+            <span class="wl-sub">Part 1</span>
+          </a></li>
+          <li><a href="pages/blogs/blog1.html">
+            <span class="wl-title">Generative AI with Large Language Models</span>
+            <span class="wl-sub">Part 1</span>
+          </a></li>
+        </ul>
+      </section>
+
+      <!-- 06 · Credentials -->
+      <section id="credentials" class="section">
+        <div class="section-head">
+          <span class="eyebrow">06 &middot; credentials</span>
+          <h2>Certified where it <em>counts.</em></h2>
+        </div>
+
+        <div class="cred-grid">
+          <div class="cred-col">
+            <h3>Certifications</h3>
+            <ul class="cred-list">
+              <li><b>Azure AI Engineer Associate</b><span>Microsoft</span></li>
+              <li><b>Azure Security Engineer Associate</b><span>Microsoft</span></li>
+              <li><b>Databricks Certified Data Engineer Associate (V2)</b><span>Databricks</span></li>
+              <li><b>Azure AI Fundamentals</b><span>Microsoft</span></li>
+              <li><b>Prompt Engineering Certification</b><span>LLM prompting &amp; evaluation</span></li>
+              <li><b>AI Agent Builder Masterclass</b><span>GSDC</span></li>
+              <li><b>AI Implementation Series</b><span>GSDC</span></li>
+            </ul>
+          </div>
+          <div class="cred-col">
+            <h3>Education</h3>
+            <ul class="cred-list">
+              <li>
+                <b>B.E. Computer Science &amp; Engineering</b>
+                <span>Sri Eshwar College of Engineering, Anna University &middot; 2016 &ndash; 2020</span>
+              </li>
+            </ul>
+            <p class="cred-note">Core computer science &mdash; data structures, algorithms, databases, operating systems &mdash; the reason the AI systems I build behave like engineered software, not experiments.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 07 · Contact -->
+      <section id="contact" class="section">
+        <div class="section-head">
+          <span class="eyebrow">07 &middot; contact</span>
+          <h2>Let&rsquo;s talk about what AI can <em>actually do</em> for your business.</h2>
+          <p class="sec-sub">An agentic system, a RAG platform, automation that removes toil, or an AI project that stalled before production &mdash; I&rsquo;m happy to have that conversation.</p>
+        </div>
+
+        <div class="quick-links contact-cards">
+          <article class="card clickable">
+            <a href="mailto:arunprakashmanikandan@gmail.com">
+            <h3>Email</h3>
+            <p>arunprakashmanikandan@gmail.com</p>
+            <p class="value-line">fastest way to reach me</p></a>
+          </article>
+          <article class="card">
+            <h3>Elsewhere</h3>
+            <p class="link-row">
+              <a class="pill-link" href="https://www.linkedin.com/in/arunprakashmanikandan" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              <a class="pill-link" href="https://github.com/TheCodeCraftsbeing" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <a class="pill-link" href="assets/Arunprakash.pdf" target="_blank" rel="noopener noreferrer">Resume (PDF)</a>
+            </p>
+          </article>
+        </div>
+      </section>
+
     </main>
 
     <footer class="site-footer">
       <div class="container">
         <p>&copy; <strong>Arunprakash</strong></p>
-        <p><a href="assets/Arunprakash.pdf" target="_blank" rel="noopener noreferrer">Resume (PDF)</a> &middot; <a href="pages/contact.html">Contact</a></p>
+        <p><a href="assets/Arunprakash.pdf" target="_blank" rel="noopener noreferrer">Resume (PDF)</a> &middot; <a href="#contact">Contact</a></p>
       </div>
     </footer>
   </div>
